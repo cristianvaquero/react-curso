@@ -1,24 +1,21 @@
 import { useState } from 'react'
-import Titulo from './components/Titulo/Titulo';
+// import Titulo from './components/Titulo/Titulo';
 import NavBar from './components/NavBar/NavBar';
+import Tarjeta from './components/Tarjeta/Tarjeta';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
-
-
 
   return (
     
     <div className="App">
       <NavBar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p> React </p>
-        <Titulo />
-
+        <Tarjeta />
       </header>
     </div>
   );
