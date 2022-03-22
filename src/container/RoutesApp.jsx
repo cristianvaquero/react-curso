@@ -3,11 +3,14 @@
 import NavBar from '../components/NavBar/NavBar';
 import Tarjeta from '../components/Tarjeta/Tarjeta'
 import Titulo from '../components/Titulo/Titulo'
-import ItemListContainer from './ItemListContainer';
+import ItemListContainer from "./ItemListContainer"
 
 
 
 function RoutesApp() {
+
+    const manejarCount = (count) => {
+        alert(`Agregaste ${count} productos`); }
     
     // let titulo = 'Soy el TITULO';
     // const titu = 'Soy un titulo de children' //estado
@@ -22,9 +25,12 @@ function RoutesApp() {
             <header className="App-header">
                     <br/><br/>
                 <Tarjeta />
-                    <br/><br/>
+                    <br/>
+                
+                <ItemListContainer manejarCount = { manejarCount } />
+                <br/><br/>
 
-                <ItemListContainer greeting="Desafio React" />
+                {/* <ItemListContainer greeting="Desafio React" /> */}
                     {/* <br/>
                     <hr />
                     <Titulo 
