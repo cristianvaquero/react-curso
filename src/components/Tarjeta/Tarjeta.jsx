@@ -5,13 +5,15 @@ import Button from 'react-bootstrap/Button'
 function Tarjeta() {
   return (
     
-    <Card className="text-center">
-        <Card.Header className="text-primary fw-bold">Card</Card.Header>
-        <Card.Body>
-            <Card.Title className="text-muted">Special title treatment</Card.Title>
-            <Card.Text className="text-muted">With supporting text below as a natural lead-in to additional content.</Card.Text>
-            <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="https://tecnotronicos.com/wp-content/uploads/2020/11/xiaomi-auriculares-inalambricos-bluetooth-redmi-airdots-tws-d_nq_np_656332-mla31193985706_062019-f1-6ba9da3a21fa317f5e15947467742246-640-0.jpg" />
+      <Card.Body>
+        <Card.Title style={{color: 'Black' }}>Auriculares Xiaomi Mi Earbuds Basic 2 Bluetooth</Card.Title>
+        <Card.Text style={{ color: 'Red'}}>
+          $3.999
+        </Card.Text>
+        <Button variant="primary">Comprar</Button>
+      </Card.Body>
     </Card>
 
   )
